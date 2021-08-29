@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	choose one of the option:<input type="text" list="items" /><br>
+	<datalist id="items">
+		<option>item1</option>
+		<option>item2</option>
+	</datalist>
+	<input type="date" value="date" /><br>
+	<input type="color" value="color" /><br>
+	<input type="email" placeholder="email" /><br>
+	<input type="url" placeholder="enter a url" /><br>
+	month:<input type="month" /><br>
+	weel:<input type="week" /><br>
+	time:<input type="time" /><br>
+	tell:<input type="tel" /><br>
+	<input type="search" placeholder="search something" /><br>
+	number:<input type="number" min="0" max="20" step="0.25" /><br>
+	range:<input type="range" id="range" min="0" max="100" value="50" /><span id="rn"></span>
+	<input type="submit" value="check" /><br>
+	<msup><mi>2</mi><mo>+</mo><mn>2</mn></msup><mo>=</mo><mi>4</mi><br>
+	
+	<script>
+		var x=document.getElementById("range");
+		var y=document.getElementById("rn")
+		x.onchange=function(){
+			y.innerHTML=x.value
+		}
+	</script>
+</body>
+</html>
